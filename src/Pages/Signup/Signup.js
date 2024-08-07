@@ -11,8 +11,6 @@ function Signup() {
         if (token) {
           localStorage.setItem("jwtToken", token);
           console.log("Token stored:", token);
-          // Optionally, you can redirect to a different page after storing the token
-          // window.location.href = "/dashboard";
         }
       }, []);
     

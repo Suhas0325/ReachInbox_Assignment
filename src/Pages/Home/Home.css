@@ -1,0 +1,60 @@
+.Main {
+  display: flex;
+}
+
+.Side_Nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 60px;
+  height: 100vh;
+  background: linear-gradient(138.97deg, #111214 5.16%, #121212 105.18%);
+  border-right: 1px solid #343a40;
+}
+
+.Side_Nav img {
+  width: 30px;
+  height: 30px;
+}
+
+.sidelogos {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.M {
+  padding-top: 15px;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  width: 100% ; 
+}
+
+.Top_Nav {
+  background: #1f1f1f;
+  height: 55px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  padding-left: 20px;
+  border-bottom: 1px solid grey;
+}
+
+.Vector {
+  width: 100%;
+  background-color: #000;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Bets {
+  display: flex;
+  flex-direction: column;
+}
+
+

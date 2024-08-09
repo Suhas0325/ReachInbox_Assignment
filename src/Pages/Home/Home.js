@@ -1,13 +1,16 @@
 import React, { useState , useEffect } from 'react';
 import './Home.css';
-import home from '../../Images/Home_fill.png';
-import message from '../../Images/message_logo-removebg-preview.png';
+import home from '../../Images/home.png';
+import message from '../../Images/mail.png';
 import M from '../../Images/Reach_logo.webp';
-import nots from '../../Images/nots.png'
+import nots from '../../Images/inbox.png'
 import Redirect from '../../Component/Redirect/Redirect';
-import Email from '../Emails/Email';
-import { NavLink } from 'react-router-dom';
+import S from '../../Images/S_logo.jpg'
+import stats from '../../Images/stats.png'
+import more from '../../Images/more.png'
+import search from '../../Images/search.png'
 import Inbox from '../Inbox/Inbox';
+import send from '../../Images/message.png'
 
 function Home() {
 
@@ -35,10 +38,16 @@ function Home() {
         </div>
         <div className="sidelogos">
          <img src={home} alt="Home" onClick={()=>ChangePath('/onebox')}  />
-          <img src={message} alt="Message" onClick={()=>ChangePath('/onebox')} />
+        <img src={search} onClick={()=>ChangePath('/onebox')}/>
+        <img src={message} alt="Message" onClick={()=>ChangePath('/onebox')} />
+        <img src={send} onClick={()=>ChangePath('/onebox')}/>
+        <img src={more} onClick={()=>ChangePath('/onebox')}/>
+       
+          
           <img src={nots} onClick={()=>ChangePath('/onebox/list')} />
+          <img src={stats} onClick={()=>ChangePath('/onebox')}/>
         </div>
-        <button>Logout</button>
+        <img src={S}  style={{borderRadius:'50%', width:'40px', height:'40px', marginBottom:'10px'}}/>
       </div>
       <div className="Content">
         <div className="Top_Nav">

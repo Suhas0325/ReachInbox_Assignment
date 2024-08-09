@@ -43,30 +43,6 @@
   border-bottom: 1px solid grey;
 }
 
-.Vector {
-  width: 100%;
-  background-color: #000;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-   
-}
-
-.Vector h2{
-  color: white;
-  font-weight: 600;
-  padding-top: 10px;
-  font-size: 20px;
-}
-
-.Vector p{
-  color: grey;
-  line-height: 2px;
-  font-size: 15px;
-}
-
 .Bets {
   display: flex;
   flex-direction: column;

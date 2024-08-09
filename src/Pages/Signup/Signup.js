@@ -1,21 +1,14 @@
 import React from "react";
-import { useEffect } from "react";
 import "./Signup.css";
-import logo from "../Images/Logo.svg";
-import Google from "../Images/Google-removebg-preview.png";
+import logo from "../../Images/Logo.svg";
+import Google from "../../Images/Google-removebg-preview.png";
 
 function Signup() {
-    useEffect(() => {
-        const urlParams = new URLSearchParams(window.location.search);
-        const token = urlParams.get("token");
-        if (token) {
-          localStorage.setItem("jwtToken", token);
-          console.log("Token stored:", token);
-        }
-      }, []);
-    
+  
+
       function Authenticate() {
-        window.location.href = "https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=http://localhost:3000/home";
+       
+        window.location.href = "https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=http://localhost:3000/onebox";
       }
     
   return (
